@@ -1,0 +1,59 @@
+﻿Serial: MTI074042127 - 100% рабочий ключ, поставлялся вместе с демокитом от микрочипа
+Serial: MTI030340303 - ключ из компании Кима-8 (лично его не проверял)
+
+If you have previously installed an Evaluation or Lite edition of MPLAB C30 and you wish to upgrade your current installation to the Standard edition, there is no need to re-run the installer unless you also wish to upgrade the currently installed product to the latest release. Once you have obtained a valid license key, from www.microchipdirect.com for example, simply execute the following command line:
+pic30-lm –ulicensekey
+
+
+C:\Program Files\Microchip\mplabc30\v3.25\bin\pic30-lm.exe –ulicensekey
+--------------------
+
+
+
+
+
+-----------------------
+
+проверяем текущую лицензию:
+
+C:\............>pic30-lm
+Microchip MPLAB C30 License Manager Version v3_25 (Build Date Oct 11 2010).
+Copyright (c) 2008 Microchip Technology Inc. All rights reserved.
+This demo-version license for MPLAB C for 16-bit devices,
+   has 38 days remaining after today.
+
+
+в директории mplabC30 ->bin ->выполнить из командной строки команду:
+pic30-lm.exe  -uMTI074042127
+Он должен проглотить это. 
+
+
+C:\............>pic30-lm -uMTI074042127
+Microchip MPLAB C30 License Manager Version v3_25 (Build Date Oct 11 2010).
+Copyright (c) 2008 Microchip Technology Inc. All rights reserved.
+Upgrading to license MTI074042127.
+
+
+
+Потом еще раз - тоже из командной строки - выполнить команду:
+pic30-lm
+снова проверяем лицензию:
+Должно появиться сообщение:
+License number MTI074042127
+
+C:\............>pic30-lm
+Microchip MPLAB C30 License Manager Version v3_25 (Build Date Oct 11 2010).
+Copyright (c) 2008 Microchip Technology Inc. All rights reserved.
+License number MTI074042127.
+
+Вот и все :)
+
+-------------
+
+
+поверх старой версии компилятора можно поставить новую
+лицензия должна сохраниться 
+для проверки достаточно выполнить 
+pic30-lm.exe
+
+
